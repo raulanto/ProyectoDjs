@@ -9,12 +9,12 @@ class Migration(migrations.Migration):
         ('panel', '0001_initial'),
     ]
 
-    # operations = [
-    #     migrations.RemoveField(
-    #         model_name='estado',
-    #         name='pais',
-    #     ),
-    #     migrations.DeleteModel(
-    #         name='Pais',
-    #     ),
-    # ]
+    operations = [
+        migrations.RemoveField(
+            model_name='estado',
+            name='pais',
+        ),
+        migrations.DeleteModel(
+            name='Pais',
+        ),
+    ]
