@@ -5,9 +5,9 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('panel', '0003_alter_estado_nombre_alter_municipio_nombre'),
-    ]
+    # dependencies = [
+    #     ('panel', '0003_alter_estado_nombre_alter_municipio_nombre'),
+    # ]
 
     operations = [
         migrations.AddField(

@@ -5,9 +5,9 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('panel', '0004_municipio_codigo'),
-    ]
+    # dependencies = [
+    #     ('panel', '0004_municipio_codigo'),
+    # ]
 
     operations = [
         migrations.RemoveField(
