@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_framework import viewsets, generics
+from rest_framework import viewsets, generics,permissions
 from .serializer import MunicipioSerializer,EstadoSerializer
 from .models import Municipio,Estado
 # Create your views here.
@@ -7,6 +7,7 @@ from .models import Municipio,Estado
 class MunicipioView(viewsets.ModelViewSet):
     serializer_class = MunicipioSerializer
     queryset = Municipio.objects.all()
+    permission_classes = [permissions.AllowAny]
 
 
 class EstadoView(viewsets.ModelViewSet):

@@ -5,21 +5,21 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    # dependencies = [
-    #     ('panel', '0004_municipio_codigo'),
-    # ]
+    dependencies = [
+        ('panel', '0004_municipio_codigo'),
+    ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='estado',
-            name='pais',
-        ),
+        # migrations.RemoveField(
+        #     model_name='estado',
+        #     name='pais',
+        # ),
         migrations.AlterField(
             model_name='municipio',
             name='codigo',
             field=models.CharField(blank=True, max_length=6, null=True),
         ),
-        migrations.DeleteModel(
-            name='Pais',
-        ),
+        # migrations.DeleteModel(
+        #     name='Pais',
+        # ),
     ]

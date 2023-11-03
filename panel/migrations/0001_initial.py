@@ -11,32 +11,32 @@ class Migration(migrations.Migration):
     dependencies = [
     ]
 
-    # operations = [
-    #     migrations.CreateModel(
-    #         name='Estado',
-    #         fields=[
-    #             ('id', models.AutoField(primary_key=True, serialize=False)),
-    #             ('nombre', models.CharField(max_length=50)),
-    #         ],
-    #     ),
-    #     migrations.CreateModel(
-    #         name='Pais',
-    #         fields=[
-    #             ('id', models.AutoField(primary_key=True, serialize=False)),
-    #             ('nombre', models.CharField(max_length=50)),
-    #         ],
-    #     ),
-    #     migrations.CreateModel(
-    #         name='Municipio',
-    #         fields=[
-    #             ('id', models.AutoField(primary_key=True, serialize=False)),
-    #             ('nombre', models.CharField(max_length=50)),
-    #             ('estado', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='panel.estado')),
-    #         ],
-    #     ),
-    #     migrations.AddField(
-    #         model_name='estado',
-    #         name='pais',
-    #         field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='panel.pais'),
-    #     ),
-    # ]
+    operations = [
+        migrations.CreateModel(
+            name='Estado',
+            fields=[
+                ('id', models.AutoField(primary_key=True, serialize=False)),
+                ('nombre', models.CharField(max_length=50)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Pais',
+            fields=[
+                ('id', models.AutoField(primary_key=True, serialize=False)),
+                ('nombre', models.CharField(max_length=50)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Municipio',
+            fields=[
+                ('id', models.AutoField(primary_key=True, serialize=False)),
+                ('nombre', models.CharField(max_length=50)),
+                ('estado', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='panel.estado')),
+            ],
+        ),
+        # migrations.AddField(
+        #     model_name='estado',
+        #     name='pais',
+        #     field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='panel.pais'),
+        # ),
+    ]

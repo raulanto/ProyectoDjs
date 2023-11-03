@@ -5,16 +5,16 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    # dependencies = [
-    #     ('panel', '0005_remove_estado_pais_alter_municipio_codigo_and_more'),
-    # ]
+    dependencies = [
+        ('panel', '0005_remove_estado_pais_alter_municipio_codigo_and_more'),
+    ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='estado',
-            name='pais',
-        ),
-        migrations.DeleteModel(
-            name='Pais',
-        ),
+        # migrations.RemoveField(
+        #     model_name='estado',
+        #     name='pais',
+        # ),
+        # migrations.DeleteModel(
+        #     name='Pais',
+        # ),
     ]

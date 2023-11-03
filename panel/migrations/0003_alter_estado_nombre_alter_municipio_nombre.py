@@ -5,9 +5,9 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    # dependencies = [
-    #     ('panel', '0002_remove_estado_pais_delete_pais'),
-    # ]
+    dependencies = [
+        ('panel', '0002_remove_estado_pais_delete_pais'),
+    ]
 
     operations = [
         migrations.AlterField(
